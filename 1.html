@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>漳州锦丽新材料科技有限公司 - PA6-GF系列性能对照表</title>
+  <style>
+    :root {
+      --primary: #0d47a1;
+      --secondary: #3498db;
+      --accent: #0288d1;
+      --light: #ecf0f1;
+      --dark: #2c3e50;
+      --success: #27ae60;
+      --warning: #f39c12;
+      --danger: #e74c3c;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #f5f7fa;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+
+    nav {
+      background: var(--light);
+      padding: 15px 20px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      border-bottom: 1px solid #ddd;
+    }
+
+    nav a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+      padding: 8px 16px;
+      border-radius: 6px;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      background: var(--secondary);
+      color: white;
+    }
+
+    .section {
+      padding: 30px 20px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .section-title {
+      font-size: 1.8rem;
+      color: var(--primary);
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .section-title i {
+      font-size: 1.5rem;
+      color: var(--accent);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      font-size: 0.95rem;
+    }
+
+    th, td {
+      padding: 12px 15px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th {
+      background: var(--primary);
+      color: white;
+      font-weight: 600;
+      position: sticky;
+      top: 0;
+    }
+
+    tr:nth-child(even) {
+      background: #f9f9f9;
+    }
+
+    tr:hover {
+      background: #f1f7ff;
+    }
+
+    .trend-up {
+      color: var(--success);
+      font-weight: bold;
+    }
+
+    .trend-down {
+      color: var(--danger);
+      font-weight: bold;
+    }
+
+    .tooltip {
+      position: relative;
+      cursor: help;
+      border-bottom: 1px dashed var(--accent);
+    }
+
+    .tooltip::after {
+      content: attr(data-tip);
+      position: absolute;
+      bottom: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--dark);
+      color: white;
+      padding: 8px 12px;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      white-space: nowrap;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease;
+      z-index: 100;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    .tooltip:hover::after {
+      opacity: 1;
+      visibility: visible;
+      bottom: 120%;
+    }
+
+    .footer {
+      background: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--accent);
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #d35400;
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+      table {
+        font-size: 0.85rem;
+      }
+      th, td {
+        padding: 8px 10px;
+      }
+    }
+  </style>
+  <!-- 引入 Font Awesome 图标 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1><i class="fas fa-flask"></i> 漳州锦丽新材料科技有限公司</h1>
+      <p>PA6-GF系列高性能工程塑料性能对照表（专业增强版）</p>
+    </header>
+
+    <nav>
+      <a href="#physical">物理性能</a>
+      <a href="#mechanical">机械性能</a>
+      <a href="#thermal">热性能</a>
+      <a href="#application">加工与应用</a>
+      <a href="#tips">工程师提示</a>
+    </nav>
+
+    <div class="section" id="physical">
+      <h2 class="section-title"><i class="fas fa-ruler-combined"></i> 物理性能</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>性能项目</th>
+            <th>测试标准</th>
+            <th>单位</th>
+            <th>PA6-GF15<br>(低玻纤/高韧)</th>
+            <th>PA6-GF30<br>(通用增强)</th>
+            <th>PA6-GF40<br>(高刚性)</th>
+            <th>PA6-GF50<br>(超高刚性)</th>
+            <th>变化趋势说明</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>密度</td>
+            <td>ISO 1183</td>
+            <td>g/cm³</td>
+            <td>1.27 – 1.29</td>
+            <td>1.38 – 1.40</td>
+            <td>1.46 – 1.48</td>
+            <td>1.55 – 1.58</td>
+            <td class="trend-up">➤ 随玻纤含量线性增加</td>
+          </tr>
+          <tr>
+            <td>吸水率(饱和)</td>
+            <td>ISO 62</td>
+            <td>%</td>
+            <td>7.5 – 8.5</td>
+            <td>6.0 – 7.0</td>
+            <td>5.0 – 6.0</td>
+            <td>4.0 – 5.0</td>
+            <td class="trend-down">➤ 玻纤越多，吸水率越低 → 尺寸稳定性↑</td>
+          </tr>
+          <tr>
+            <td>成型收缩率(流动)</td>
+            <td>ISO 294-4</td>
+            <td>%</td>
+            <td>0.4 – 0.6</td>
+            <td>0.2 – 0.4</td>
+            <td>0.1 – 0.3</td>
+            <td>0.1 – 0.2</td>
+            <td class="trend-up">➤ 尺寸稳定性显著提升 → 精密件首选</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="section" id="mechanical">
+      <h2 class="section-title"><i class="fas fa-dumbbell"></i> 机械性能</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>性能项目</th>
+            <th>测试标准</th>
+            <th>单位</th>
+            <th>PA6-GF15</th>
+            <th>PA6-GF30</th>
+            <th>PA6-GF40</th>
+            <th>PA6-GF50</th>
+            <th>变化趋势说明</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>拉伸强度</td>
+            <td>ISO 527</td>
+            <td>MPa</td>
+            <td>90 – 110</td>
+            <td>160 – 180</td>
+            <td>200 – 220</td>
+            <td>230 – 250</td>
+            <td class="trend-up">➤ GF50可达纯料3倍 → 轻量化利器</td>
+          </tr>
+          <tr>
+            <td>拉伸模量</td>
+            <td>ISO 527</td>
+            <td>MPa</td>
+            <td>4,500 – 5,500</td>
+            <td>8,500 – 9,500</td>
+            <td>11,000 – 12,500</td>
+            <td>13,500 – 15,000</td>
+            <td class="trend-up">➤ 刚性急剧增加 → 抗变形能力极强</td>
+          </tr>
+          <tr>
+            <td>断裂伸长率</td>
+            <td>ISO 527</td>
+            <td>%</td>
+            <td>3.0 – 5.0</td>
+            <td>2.0 – 3.0</td>
+            <td>1.5 – 2.5</td>
+            <td>1.0 – 2.0</td>
+            <td class="trend-down">➤ 韧性随玻纤增加而降低 → 设计需避尖锐缺口</td>
+          </tr>
+          <tr>
+            <td>弯曲强度</td>
+            <td>ISO 178</td>
+            <td>MPa</td>
+            <td>140 – 160</td>
+            <td>240 – 260</td>
+            <td>290 – 310</td>
+            <td>330 – 350</td>
+            <td class="trend-up">➤ 抗弯曲负载能力极强 → 支架类优选</td>
+          </tr>
+          <tr>
+            <td>弯曲模量</td>
+            <td>ISO 178</td>
+            <td>MPa</td>
+            <td>4,200 – 5,000</td>
+            <td>8,000 – 9,000</td>
+            <td>10,500 – 11,500</td>
+            <td>13,000 – 14,000</td>
+            <td class="trend-up">➤ 抗变形能力显著增强 → 替代铝合金可行</td>
+          </tr>
+          <tr>
+            <td>缺口冲击强度(23℃)</td>
+            <td>ISO 180</td>
+            <td>kJ/m²</td>
+            <td>9.0 – 12.0</td>
+            <td>8.0 – 10.0</td>
+            <td>7.0 – 9.0</td>
+            <td>6.0 – 8.0</td>
+            <td class="trend-down">➤ 保持一定韧性，但呈下降趋势 → 避免应力集中</td>
+          </tr>
+          <tr>
+            <td>缺口冲击强度(-30℃)</td>
+            <td>ISO 180</td>
+            <td>kJ/m²</td>
+            <td>6.0 – 8.0</td>
+            <td>5.0 – 7.0</td>
+            <td>4.0 – 6.0</td>
+            <td>3.5 – 5.0</td>
+            <td class="trend-down">➤ 低温下仍优于许多其他塑料 → 北方地区适用</td>
+          </tr>
+          <tr>
+            <td>洛氏硬度(R标尺)</td>
+            <td>ISO 2039-2</td>
+            <td>-</td>
+            <td>M100 – M105</td>
+            <td>M108 – M112</td>
+            <td>M112 – M116</td>
+            <td>M115 – M120</td>
+            <td class="trend-up">➤ 表面耐磨性提高 → 齿轮/滑轨友好</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="section" id="thermal">
+      <h2 class="section-title"><i class="fas fa-fire"></i> 热性能</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>性能项目</th>
+            <th>测试标准</th>
+            <th>单位</th>
+            <th>PA6-GF15</th>
+            <th>PA6-GF30</th>
+            <th>PA6-GF40</th>
+            <th>PA6-GF50</th>
+            <th>变化趋势说明</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>熔点(Tm)</td>
+            <td>ISO 11357</td>
+            <td>°C</td>
+            <td>220 – 225</td>
+            <td>220 – 225</td>
+            <td>220 – 225</td>
+            <td>220 – 225</td>
+            <td>➤ 基体树脂决定，变化不大 → 加工窗口稳定</td>
+          </tr>
+          <tr>
+            <td>热变形温度(HDT, 1.8MPa)</td>
+            <td>ISO 75</td>
+            <td>°C</td>
+            <td>185 – 195</td>
+            <td>210 – 220</td>
+            <td>220 – 230</td>
+            <td>230 – 240</td>
+            <td class="trend-up">➤ 耐高温性能显著改善 → 发动机舱可用</td>
+          </tr>
+          <tr>
+            <td>热变形温度(HDT, 0.45MPa)</td>
+            <td>ISO 75</td>
+            <td>°C</td>
+            <td>200 – 210</td>
+            <td>225 – 235</td>
+            <td>235 – 245</td>
+            <td>245 – 255</td>
+            <td class="trend-up">➤ 低负载下耐热极佳 → 电子连接器安全裕度大</td>
+          </tr>
+          <tr>
+            <td>线性热膨胀系数(流动)</td>
+            <td>ISO 11359</td>
+            <td>10⁻⁶/K</td>
+            <td>4.0 – 5.0</td>
+            <td>2.5 – 3.5</td>
+            <td>2.0 – 2.8</td>
+            <td>1.5 – 2.2</td>
+            <td class="trend-down">➤ 越接近金属，尺寸越稳定 → 与金属嵌件配合无忧</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="section" id="application">
+      <h2 class="section-title"><i class="fas fa-cogs"></i> 加工与应用</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>项目</th>
+            <th>PA6-GF15</th>
+            <th>PA6-GF30</th>
+            <th>PA6-GF40</th>
+            <th>PA6-GF50</th>
+            <th>选材建议</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>推荐应用领域</td>
+            <td>外观件、薄壁件<br>需高韧性的结构件</td>
+            <td>汽车引擎盖下部件<br>电动工具外壳、连接器</td>
+            <td>高强度结构件<br>齿轮、轴承保持架</td>
+            <td>极端高刚性需求<br>替代金属部件</td>
+            <td>根据受力情况选择：<br>- 动态载荷→GF30/GF40<br>- 静态承重→GF50</td>
+          </tr>
+          <tr>
+            <td>加工流动性</td>
+            <td>★★★★ (好)</td>
+            <td>★★★ (中)</td>
+            <td>★★ (较差)</td>
+            <td>★ (差)</td>
+            <td>➤ 玻纤越高，流动性越差 → 建议提高料温至260–270℃，注射压力≥120MPa</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="section" id="tips">
+      <h2 class="section-title"><i class="fas fa-lightbulb"></i> 工程师提示 & 应用案例</h2>
+      <ul style="padding-left: 20px; line-height: 1.8;">
+        <li><strong>GF15</strong>：适合对外观和韧性要求高的消费电子产品外壳。</li>
+        <li><strong>GF30</strong>：平衡性能之王，广泛用于汽车零部件（如进气歧管、风扇叶片）。</li>
+        <li><strong>GF40</strong>：工业设备关键结构件，如机器人关节、泵壳。</li>
+        <li><strong>GF50</strong>：金属替代主力军，已成功应用于新能源电池包端板、电机支架等。</li>
+        <li><strong>干燥条件</strong>：所有牌号必须干燥至水分 &lt; 0.2%，否则易产生银纹或气泡。</li>
+        <li><strong>模具温度</strong>：GF40/GF50建议使用高温模具（110–130℃），以减少内应力并提升表面光泽。</li>
+        <li><strong>竞品对标</strong>：相比杜邦Zytel® 70G30HSL，锦丽GF30成本低15%，本地服务响应快3倍。</li>
+      </ul>
+      <div style="text-align: center; margin-top: 30px;">
+    
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>&copy; 2025 漳州锦丽新材料科技有限公司 | 专业改性塑料解决方案提供商</p>
+      <p>技术支持：contact@jinlimaterials.com | 官网：www.jinlimaterials.com</p>
+    </footer>
+  </div>
+
+  <script>
+    // 平滑滚动
+    document.querySelectorAll('nav a').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        const targetSection = document.querySelector(targetId);
+        window.scrollTo({
+          top: targetSection.offsetTop - 80,
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
